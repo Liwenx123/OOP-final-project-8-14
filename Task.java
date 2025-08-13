@@ -47,7 +47,7 @@ public class Task {
 
     public boolean isDueWithinHours(long hours) {
         if (dueAt == null || status == Status.COMPLETED) return false;
-        var now = LocalDateTime.now();
+        LocalDateTime now = LocalDateTime.now();
         return !dueAt.isBefore(now) && Duration.between(now, dueAt).toHours() <= hours;
     }
 

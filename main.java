@@ -4,11 +4,11 @@ import java.io.*;
 
 public class Main {
     public static void main(String[] args) {
-        ProjectManagementSystem system = new ProjectManagementSystem();
+        ProjectManager system = new ProjectManager();
         
         // Load saved data if available
         DataManager dataManager = new DataManager();
-        ProjectManagementSystem loadedSystem = dataManager.loadData();
+        ProjectManager loadedSystem = dataManager.loadData();
         if (loadedSystem != null) {
             system = loadedSystem;
         }
@@ -61,19 +61,19 @@ public class Main {
     }
     
     // Other methods for handling menu options
-    private static void viewProjects(ProjectManagementSystem system, Scanner scanner) {
+    private static void viewProjects(ProjectManager system, Scanner scanner) {
         // Implementation for viewing projects
     }
     
-    private static void createProject(ProjectManagementSystem system, Scanner scanner) {
+    private static void createProject(ProjectManager system, Scanner scanner) {
         // Implementation for creating projects
     }
     
-    private static void searchProjectsAndTasks(ProjectManagementSystem system, Scanner scanner) {
+    private static void searchProjectsAndTasks(ProjectManager system, Scanner scanner) {
         // Implementation for searching
     }
     
-    private static void filterProjects(ProjectManagementSystem system, Scanner scanner) {
+    private static void filterProjects(ProjectManager system, Scanner scanner) {
         // Implementation for filtering
     }
 }
