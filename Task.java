@@ -56,4 +56,3 @@ public class Task {
         for (String t : in) if (t != null) out.add(t.trim().toLowerCase());
         return out;
     }
-}
