@@ -76,4 +76,4 @@ public class Main {
     private static void filterProjects(ProjectManager system, Scanner scanner) {
         // Implementation for filtering
     }
-
+}
